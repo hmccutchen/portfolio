@@ -40,12 +40,24 @@ p {
   justify-content: center;
 }
 
-p {
-  font-size: 20px;
-  font-weight: normal;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  line-height: 30px;
+  p {
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    line-height: 30px;
+  }
+
+
+
+.p-title{
+  text-align: center;
 }
+
+.p-video{
+  position: relative;
+}
+
+
 
 .banner img {
   align-items: center;
@@ -90,7 +102,7 @@ p {
 .card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
+  /*background-size: cover !important;*/
   background-position: center;
   color: white;
   position: relative;
@@ -99,10 +111,7 @@ p {
   box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.card:hover{
-  background-color: red;
 
-}
 
 
 
@@ -285,15 +294,17 @@ p {
 }
 
 /* Logo */
-.navbar-wagon-brand img {
+/*.navbar-wagon-brand img {
   height: 50px;
-}
+}*/
 
 /* User Avatar */
 .navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
+  position:relative;
+  left: 50px;
 }
 
 /* Right section */
@@ -321,24 +332,24 @@ p {
 }
 
 /* Dropdown menu */
-.navbar-wagon-dropdown-menu {
+/*.navbar-wagon-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
+}*/
+/*.navbar-wagon-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
   color: #999999 !important;
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
+}*/
+/*.navbar-wagon-dropdown-menu li > a:hover {
   background: transparent !important;
   color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
+}*/
+/*.navbar-wagon-dropdown-menu:before {
   content: ' ';
   height: 10px;
   width: 10px;
@@ -350,7 +361,7 @@ p {
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
-
+*/
 
 .profil {
   clear: both;
@@ -416,7 +427,11 @@ p {
 }
 
 #iresume{
-  margin-right: 30px;
+position:relative;
+left: 25%;
+content: '';
+width: 7px;
+
 }
 
 .testimonials img {
