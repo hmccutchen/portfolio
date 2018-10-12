@@ -8,6 +8,17 @@ h1, h2, h3, p, ul {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+
+ a{
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+
 p {
   padding-top: 20px;
 }
@@ -300,8 +311,8 @@ p {
 
 /* User Avatar */
 .navbar-wagon .avatar {
-  height: 50px;
-  width: 50px;
+  height: 69px;
+  width: 59px;
   border-radius: 50%;
   position:relative;
   left: 50px;
