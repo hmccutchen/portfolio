@@ -25,7 +25,7 @@ var tag = document.createElement('script');
                         'autoplay': 1,
                         'version': 3,
                         'start': 960,
-                        'end': 1155,
+                        'end': 1200,
                         'theme': 'light',
                         'loop':1,
                         'playsinline': 1,
@@ -60,6 +60,19 @@ var tag = document.createElement('script');
 
 
 
+
+const flip = document.getElementsByClassName("action");
+
+const runFlip = (e) => {
+
+ e.classList.toggle('flip');
+
+}
+
+
+
+
+
 var exp = document.getElementById("exp");
 
 exp.addEventListener("click", function(){
@@ -89,10 +102,6 @@ project.addEventListener("click", function(){
 p.scrollIntoView({behavior: 'smooth'});
 
 })
-
-
-
-
 
 
 
