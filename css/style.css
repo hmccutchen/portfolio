@@ -44,7 +44,7 @@ p {
   z-index: 0;
 }
 
-.shade{
+/*.shade{
   content: "";
 width: 100%;
 position: absolute;
@@ -52,10 +52,21 @@ z-index: 1;
 height: 85%;
 background-color: black;
 opacity: 0.4;
+}*/
+
+
+.video-controls ul{
+  display:flex;
+ justify-content: space-around;
+ color: #da552f;
+ margin-top: 10px;
 }
 
-
-
+.video-controls li{
+  font-weight: bold;
+  list-style: none;
+  font-size: 1.3em;
+}
 
 
 
