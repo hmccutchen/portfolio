@@ -15,36 +15,35 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
-<body>
+<body id="navb">
 
 
-  <NAV class="container navigation">
-    <div class="row">
+  <nav class="container navigation">
 
       <div class="navbar-wagon">
+        <ul class="nav-flex">
+          <li ><a id="nav">Home</a>  |</li>
+          <li><a id="prj"  class="navbar-wagon-item navbar-wagon-link">Projects</a>  |</li>
+          <li><a id="rsm"  class="navbar-wagon-item navbar-wagon-link">Resume</a>   |</li>
+          <li><a id ="exp"  class="navbar-wagon-item navbar-wagon-link">Experience</a>
+          </li>
 
-        <div class="nav-flex">
+          <!-- <li>
+          <img class="navatar" src="hassan.jpeg" />
 
-          <a id="prj"  class="navbar-wagon-item navbar-wagon-link">Projects</a>
-          <a id="rsm"  class="navbar-wagon-item navbar-wagon-link">Resume</a>
-          <a id ="exp"  class="navbar-wagon-item navbar-wagon-link">Experience</a>
+          </li> -->
+        </ul>
 
-          <!-- Profile picture  -->
-
-        </div>
-
-
-        <div class="navbar-wagon-item">
-          <a><img src="hassan.jpeg" class="avatar dropdown-toggle" id="navbar-wagon-menu"></a>
-        </div>
+        <!-- <div class="navatar">
+        </div> -->
       </div>
-    </div>
-  </NAV>
 
+  </nav>
  <div class="banner">
   <div id="player" class="my-frame"
   ></div>
-  <div class="shade"></div>
+
+
 
 
   <div class="banner-content">
@@ -86,7 +85,7 @@
     <p class="col-md-11">
       This project is designed to service bartenders/servers. Users are able to search for a restaurant theyve worked, and post a review basid on given criteria, users may also like another users post and view individual reviews. in the future I plan to intergrate the react framework and job posting and chat features.
 
-      tech: Rails , ruby, SQL, Yelp API, AJAX, vanilla Javascript, bootstrap, CSS3, and HTML.
+      tech: Rails , ruby, SQL, Yelp API, AJAX, vanilla Javascript, bootstrap, CSS3, and HTML5.
     </p>
   </div>
 
@@ -98,7 +97,7 @@
 <a id="res" name="resume"></a>
 <div class="container">
   <div class="row">
-    <div class="embed-responsive embed-responsive-16by9 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="section-title">
         <h2>My Resume</h2>
       </div>
@@ -112,11 +111,11 @@
 
 
 
+      <a id="ex" name="experience"></a>
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12 ">
      <div class="section-title">
-      <a id="ex" name="experience"></a>
       <h2 >My  Experience</h2>
     </div>
     <h2 class="p-title"> Studied and graduated  Le-wagon coding bootcamp and New York Code and Design Academy</h2>
