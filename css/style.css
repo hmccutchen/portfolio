@@ -66,7 +66,6 @@ p {
   text-align: center;
   height: 300px;
   margin-top: 100px;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -121,7 +120,7 @@ p {
 .banner p {
   font-size: 40px;
   font-weight: lighter;
-  /*color: rgb(255, 255, 255);*/
+
   opacity: 0.8;
   margin-bottom: 30px;
   position: absolute;
@@ -134,8 +133,6 @@ p {
 
 .email-button{
   position: absolute;
-
-
   top: 230px;
   left: -64px;
   z-index: 2;
@@ -277,10 +274,8 @@ p {
 
 .skills-box {
   background-color: #ffffff;
-  /*border: 5px solid lightgrey;*/
   text-align: center;
   padding: 40px 20px;
-  /*margin: 0 0 20px;*/
   margin: 10px 10px 10px 10px;
 
 }
@@ -344,19 +339,16 @@ p {
 
 /* Main navbar */
 .navigation {
+ display: flex;
+ top: 0;
  background-color: white;
   font-family: 'Open Sans Condensed', sans-serif;
  z-index: 1;
   padding: 0px 30px;
   width:100%;
   position: sticky !important;
- top: 0;
- display: flex;
- list-style: none;
-
   align-items: center;
- /*height: 70px;
-*/
+
 }
 
 .navigation li{
@@ -380,16 +372,12 @@ p {
 
 .navigation ul{
   height: 45px;
- list-style: none;
-
+ list-style: none !important;
   align-items: center;
   justify-content: flex-start;
   display: flex;
   font-size: 20px;
 }
-
-
-
 
 
 /* Basic navbar item */
