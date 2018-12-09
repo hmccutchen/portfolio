@@ -87,13 +87,15 @@ p {
   text-align: center;
 }
 
-.p-video{
+/*.p-video{
   position: relative;
-}
+}*/
+
 
 
 .banner-content{
   position: absolute;
+  z-index: 0;
 }
 
 .banner img {
@@ -321,7 +323,7 @@ p {
 .language-box {
   background-color: #ffffff;
   border: 1px solid #d4d4d4;
-  text-align: CENTER;
+  text-align: center;
   padding: 40px 20px;
   margin: 0 0 20px;
   margin: 10px 10px 10px 10px;
@@ -346,57 +348,74 @@ p {
 
 
 /* Main navbar */
-.navbar-wagon {
-  /*background: white;*/
+.navigation {
+ background-color: white;
   font-family: 'Open Sans Condensed', sans-serif;
-  height: 70px;
+ z-index: 1;
   padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width:100%;
+  position: sticky;
+ top: 0;
+ /*height: 70px;
+*/}
 
+.navigation li{
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.navigation{
+.banner{
   position: relative;
-
-
-
 }
+
+
+/* this navata styling is for the avatar picture, since we have the youtube vid maybe we dont need it?*/
+/* trying to move the navatar further to the right side of the navbar is more trouble than i thought */
+
+
+/*.navatar {
+  width:4%;
+  border-radius: 50%;
+}*/
+
+.navigation ul{
+  height: 45px;
+ list-style: none;
+
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  font-size: 20px;
+}
+
 
 
 /* User Avatar */
 .navbar-wagon .avatar {
-  height: 69px;
-  width: 59px;
+  /*height: 69px;*/
+  /*width: 59px;*/
   border-radius: 50%;
-  position:relative;
-  left: 50px;
+ /* position:relative;*/
+  /*left: 50px;*/
 }
 
-/* Right section */
-/*.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}*/
 
 /* Basic navbar item */
-.navbar-wagon-item {
+/*.navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
-}
+}*/
 
 /* Navbar link */
-.navbar-wagon-link {
+/*.navbar-wagon-link {
   color: #616668;
-  font-size: 20px;
   font-weight: bold;
-}
+}*/
+/*
 .navbar-wagon-link:hover {
   color: #da552f;
   text-decoration: none;
-}
+}*/
 
 
 

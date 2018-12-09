@@ -72,6 +72,19 @@ const runFlip = (e) => {
 
 
 
+var nav = document.getElementById("nav");
+
+nav.addEventListener("click", function(){
+  var n = document.getElementById("navb");
+
+n.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+})
+
+
+
+
+
 
 var exp = document.getElementById("exp");
 
