@@ -29,7 +29,6 @@ p {
   color: white;
   text-align: center;
   height: 600px;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
 
   display: flex;
   align-items: center;
@@ -105,6 +104,7 @@ p {
   border-radius: 50%;
 
 }
+
 .banner h1 {
   font-size: 82px;
   font-weight: bold;
@@ -117,6 +117,7 @@ p {
   left:-250px;
  /* font-family: 'Anton', sans-serif;*/
 }
+
 .banner p {
   font-size: 40px;
   font-weight: lighter;
@@ -348,10 +349,15 @@ p {
  z-index: 1;
   padding: 0px 30px;
   width:100%;
-  position: sticky;
+  position: sticky !important;
  top: 0;
+ display: flex;
+ list-style: none;
+
+  align-items: center;
  /*height: 70px;
-*/}
+*/
+}
 
 .navigation li{
   margin-right: 10px;
