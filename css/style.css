@@ -171,7 +171,6 @@ p {
 .card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  /*background-size: cover !important;*/
   background-position: center;
   color: white;
   position: relative;
@@ -181,11 +180,6 @@ p {
 }
 
 
-
-
-
-
-}
 .card-user {
   position: absolute;
   right: 10px;
@@ -369,8 +363,8 @@ p {
 }
 
 
-/* this navata styling is for the avatar picture, since we have the youtube vid maybe we dont need it?*/
-/* trying to move the navatar further to the right side of the navbar is more trouble than i thought */
+ /*this navatar styling is for the avatar picture, since we have the youtube vid maybe we dont need it?*/
+ /*trying to move the navatar further to the right side of the navbar is more trouble than i thought */
 
 
 /*.navatar {
