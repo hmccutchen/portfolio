@@ -41,7 +41,7 @@ var tag = document.createElement('script');
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
-        event.target.setVolume(0);
+        event.target.setVolume(50);
 
       }
 
