@@ -60,17 +60,14 @@ var tag = document.createElement('script');
 
 
 
+//animte css animation lib function
+// const flip = document.getElementsByClassName("action");
 
-const flip = document.getElementsByClassName("action");
+// const runFlip = (e) => {
 
-const runFlip = (e) => {
+//  e.classList.toggle('bounce');
 
- e.classList.toggle('flip');
-
-}
-
-
-
+// }
 
 var nav = document.getElementById("nav");
 
@@ -80,10 +77,6 @@ nav.addEventListener("click", function(){
 n.scrollIntoView({behavior: 'smooth', block: 'start'});
 
 })
-
-
-
-
 
 
 var exp = document.getElementById("exp");
@@ -97,7 +90,6 @@ s.scrollIntoView({behavior: 'smooth', block: 'start'});
 
 
 var resume = document.getElementById("rsm");
-
 
 
 resume.addEventListener("click", function(){
