@@ -45,7 +45,9 @@ p {
   z-index: 0;
 }
 
-
+.name-nav{
+  /*margin-left: -260px;*/
+}
 
 
 .video-controls ul{
@@ -198,7 +200,6 @@ p {
 }
 
 
-
 .section-title h2{
   text-align: left;
   margin: 50px;
@@ -332,6 +333,11 @@ p {
 
 }
 
+.navigation ul li:nth-child(5){
+   font-size: 37px;
+   margin-left: 600px;
+}
+
 
 
 .navigation li{
@@ -365,11 +371,7 @@ p {
 
 
 .profil {
-  /*clear: both;*/
-  /*padding: 0;
-  margin: 0*/;
-  /*overflow: hidden;*/
-  /*display: block;*/
+
   object-fit: cover;
 
 }
