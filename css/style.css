@@ -1,9 +1,5 @@
-
-
-
 h1, h2, h3, p, ul {
   font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
 .btn {
@@ -11,7 +7,7 @@ h1, h2, h3, p, ul {
 }
 
 
- a{
+a {
   color: black;
 }
 
@@ -19,9 +15,7 @@ a:hover{
   text-decoration: none;
   color: #000000c7;
   border-bottom: 2px solid currentColor;
-
 }
-
 
 p {
   padding-top: 20px;
@@ -90,7 +84,6 @@ p {
   transition: .4s;
 }
 
-
 input:checked + .slider {
   background-color: #2d2d2b;
 }
@@ -107,9 +100,9 @@ input:checked + .slider:before {
 
 .video-controls ul{
   display:flex;
- justify-content: space-around;
- color: #da552f;
- margin-top: 10px;
+  justify-content: space-around;
+  color: #da552f;
+  margin-top: 10px;
 }
 
 .video-controls li{
@@ -118,32 +111,16 @@ input:checked + .slider:before {
   font-size: 1.3em;
 }
 
-
-
-.calltoaction {
-  color: white;
-  text-align: center;
-  height: 300px;
-  margin-top: 100px;
-  background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+  font-size: 20px;
+  font-weight: normal;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  line-height: 30px;
 }
-
-  p {
-    font-size: 20px;
-    font-weight: normal;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    line-height: 30px;
-  }
-
-
 
 .p-title{
   text-align: center;
 }
-
 
 .banner-content{
   position: absolute;
@@ -155,7 +132,6 @@ input:checked + .slider:before {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-
 }
 
 .banner h1 {
@@ -168,7 +144,7 @@ input:checked + .slider:before {
   position: absolute;
   white-space: nowrap;
   left:-250px;
- /* font-family: 'Anton', sans-serif;*/
+  /* font-family: 'Anton', sans-serif;*/
 }
 
 .banner p {
@@ -197,63 +173,6 @@ input:checked + .slider:before {
   background-color: #da552f;
   border-color:#da552f;
 }
-
-
-
-/*card*/
-
-.card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-position: center;
-  color: white;
-  position: relative;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.05);
-}
-
-
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-
-
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
-}
-
 
 .section-title h2{
   text-align: left;
@@ -298,102 +217,26 @@ input:checked + .slider:before {
   color: #D23333;
 }
 
-.fa-6 {
-  text-align: center;
-  font-size: 5em;
-  align-items: center;
-  display: inline-block;
-
-}
-
-
-.skills-box {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 40px 20px;
-  margin: 10px 10px 10px 10px;
-
-}
-
-
-.skills-box h3 {
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  line-height: 25px;
-
-
-
-}
-.skills-box .list {
-  font-size:25px;
-  font-weight: normal;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  line-height: 20px;
-  margin: 30px 30px 30px 30px;
-  list-style: none;
-
-}
-
-
-
-
-.language-box img{
-  align-items: center;
-  height: 100px;
-  width: 100px !important;
-  border-radius: 50%;
-
-}
-
-.language-box {
-  background-color: #ffffff;
-  border: 1px solid #d4d4d4;
-  text-align: center;
-  padding: 40px 20px;
-  margin: 0 0 20px;
-  margin: 10px 10px 10px 10px;
-
-}
-
-
-.language-box h3 {
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  line-height: 25px;
-  margin-top: 30px;
-
-}
-.language-box p {
-  font-size: 15px;
-  font-weight: normal;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  line-height: 20px;
-  margin: 30px 30px 30px 30px;
-}
-
-
 /* Main navbar */
 .navigation {
  display: flex;
  top: 0;
  background-color: #f7f5f5;
-  font-family: 'Open Sans Condensed', sans-serif;
+ font-family: 'Open Sans Condensed', sans-serif;
  z-index: 1;
-  padding: 0px 30px;
-  width:100%;
-  margin:0;
-  padding: 0;
-  position: sticky !important;
-  align-items: center;
+ padding: 0px 30px;
+ width:100%;
+ margin:0;
+ padding: 0;
+ position: sticky !important;
+ align-items: center;
 
 }
 
 .navigation ul li:nth-child(5){
-   font-size: 37px;
-   margin-left: 40%;
+ font-size: 37px;
+ margin-left: 40%;
 }
-
-
 
 .navigation li{
   margin-right: 12px;
@@ -411,30 +254,16 @@ input:checked + .slider:before {
   position: relative;
 }
 
-
- /*this navatar styling is for the avatar picture, since we have the youtube vid maybe we dont need it?*/
- /*trying to move the navatar further to the right side of the navbar is more trouble than i thought */
-
-
-/*.navatar {
-  width:4%;
-  border-radius: 50%;
-}*/
-
 .navigation ul{
   height: 45px;
- list-style: none !important;
+  list-style: none !important;
   align-items: center;
   justify-content: flex-start;
   display: flex;
 }
 
-
-
 .profil {
-
   object-fit: cover;
-
 }
 
 .grid-card{
@@ -452,52 +281,15 @@ input:checked + .slider:before {
 }
 
 .pulse:hover {
-
   border: groove 3px aqua;
-
-}
-
-
-.info ul {
-  margin: 0;
-  padding: 0;
-  float: right;
-  width: 200px;
-  margin-left: 40px;
-  margin-top: -6px;
-  list-style-type: none;
-}
-
-.info li {
-  margin: 0;
-  padding: 0;
-  float: left;
-  width: 156px;
-  background-image: url(../images/bullet.gif);
-  background-repeat: no-repeat;
-  padding-left: 10px;
-  background-position: 0 .5em;
-  margin-top: 6px;
-}
-
-.btn-linkedin {
-  background: #0073b1;
-  color: #ffffff;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.calltoaction {
-  align-items: center;
-
 }
 
 
 #iresume{
-position:relative;
-left: 25%;
-content: '';
-width: 7px;
+  position:relative;
+  left: 25%;
+  content: '';
+  width: 7px;
 
 }
 

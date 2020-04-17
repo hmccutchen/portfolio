@@ -1,3 +1,10 @@
+  let input = document.getElementById("color-switch");
+
+  window.onload = function(){
+
+  input.checked ? location.reload(true) : null
+
+  }
 
 
 var tag = document.createElement('script');
@@ -160,6 +167,16 @@ p.scrollIntoView({behavior: 'smooth', block: 'start'});
    };
 
   }
+
+
+
+
+
+
+
+
+
+
 
 
 
