@@ -30,13 +30,14 @@ var tag = document.createElement('script');
                         'modestbranding': 1,
                         'rel': 0,
                         'autoplay': 1,
+                        color: 'white',
                         'version': 3,
                         'start': 960,
                         'end': 1200,
                         'theme': 'light',
-                        'loop':1,
+                        'loop': 1,
                         'playsinline': 1,
-                        'showinfo': 0
+                        'disablekb': 1,
           },
           events: {
             'onReady': onPlayerReady,
@@ -48,7 +49,7 @@ var tag = document.createElement('script');
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
-        event.target.setVolume(50);
+        event.target.setVolume(0);
 
       }
 
