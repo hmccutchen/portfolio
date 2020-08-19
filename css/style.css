@@ -299,3 +299,49 @@ p {
 
 }
 
+@media only screen and (max-width: 500px){
+
+  .video-container{
+    height: 0;
+    position:relative;
+    padding-bottom:56.25%;
+    margin-top: 20px;
+  }
+
+  .video-container iframe{
+    max-width:100%;
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    top: 0;
+  }
+
+  .video-text{
+    display: none;
+  }
+
+  .resume-container{
+    /*position: absolute;*/
+    margin-left: -141px;
+    height: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .p-title{
+    display: none;
+  }
+  .navigation li:not(:nth-child(6n)){
+    display:none;
+  }
+  .navigation li:nth-child(6n){
+    position: absolute;
+    right: 86px;
+  }
+}
+
+
+
+
+
