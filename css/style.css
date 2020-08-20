@@ -270,6 +270,7 @@ p {
   display: grid;
   grid-template-rows: repeat(4, 200px);
   grid-template-columns: repeat(3, 1fr);
+  object-fit: contain;
 }
 
 .profil img {
@@ -322,7 +323,7 @@ p {
   }
 
   .resume-container{
-    /*position: absolute;*/
+    /*position: relative;*/
     margin-left: -141px;
     height: 0;
     left: 0;
@@ -338,6 +339,10 @@ p {
   .navigation li:nth-child(6n){
     position: absolute;
     right: 86px;
+  }
+
+  .grid-card{
+    display: block;
   }
 }
 
