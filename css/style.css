@@ -161,6 +161,24 @@ p {
   left: -105px;
 }
 
+.currently-learning{
+  position: absolute;
+  z-index: 2;
+  width: 32.5%;
+  height: 21%;
+  background-color: black;
+  opacity: 0.6;
+  bottom: 0px;
+  right: 14px;
+}
+
+.currently-learning::before{
+  content: "learning";
+  color: white;
+  color: #ececec;
+  font-size: 105px;
+}
+
 .email-button{
   position: absolute;
   top: 230px;
@@ -307,6 +325,15 @@ p {
     position:relative;
     padding-bottom:56.25%;
     margin-top: 20px;
+  }
+
+  .currently-learning{
+    height: 8%;
+    width: 92%;
+  }
+
+  .currently-learning::before{
+    font-size: 92px;
   }
 
   .video-container iframe{
