@@ -288,7 +288,7 @@ p {
 
 #iresume{
   position:relative;
-  left: 25%;
+  left: 36%;
   content: '';
   width: 7px;
 
@@ -317,9 +317,17 @@ p {
     height:100%;
     top: 0;
   }
+  .structure-one{
+    max-width: 100%;
+    height: auto;
+  }
 
   .video-text{
     display: none;
+  }
+
+  .section-title h2 {
+    text-align: center;
   }
 
   .resume-container{
@@ -328,6 +336,7 @@ p {
     height: 0;
     left: 0;
     width: 100%;
+    max-width: 5615%;
   }
 
   .p-title{
@@ -343,6 +352,9 @@ p {
 
   .grid-card{
     display: block;
+  }
+  .profil img{
+    object-fit: cover;
   }
 }
 
