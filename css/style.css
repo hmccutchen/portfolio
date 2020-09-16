@@ -287,7 +287,7 @@ p {
 
 
 #iresume{
-  position:relative;
+  position: relative;
   left: 36%;
   content: '';
   width: 7px;
@@ -336,7 +336,7 @@ p {
     height: 0;
     left: 0;
     width: 100%;
-    max-width: 5615%;
+    max-width: 5371%;
   }
 
   .p-title{
@@ -355,6 +355,7 @@ p {
   }
   .profil img{
     object-fit: cover;
+    height: auto;
   }
 }
 
