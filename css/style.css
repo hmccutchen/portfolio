@@ -21,18 +21,6 @@ p {
   padding-top: 20px;
 }
 
-.banner {
-  color: white;
-  text-align: center;
-  height: 600px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .my-frame{
   position: relative;
@@ -98,18 +86,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.video-controls ul{
-  display:flex;
-  justify-content: space-around;
-  color: #da552f;
-  margin-top: 10px;
-}
-
-.video-controls li{
-  font-weight: bold;
-  list-style: none;
-  font-size: 1.3em;
-}
 
 p {
   font-size: 20px;
@@ -122,44 +98,48 @@ p {
   text-align: center;
 }
 
-.banner-content{
-  position: absolute;
-  z-index: 0;
+
+ img.resume{
+ border: 3px solid black;
+ max-width: 100%;
+ height:auto;
+ 
 }
 
-.banner img {
-  align-items: center;
-  height: 200px;
-  width: 200px;
+.important-text{
+  color: #da552f;
+}
+
+
+.resume-container{
+  text-align: center;
+}
+
+
+button.btn{
+  max-width:100%;
+}
+
+img.banner {
+ 
+  height: auto;
+  max-width: 100%;
+  width: 20%;
   border-radius: 50%;
+  border: solid black 3px;
+  
 }
 
-.banner h1 {
-  font-size: 82px;
-  font-weight: bold;
-  color:#ffff;
-  text-shadow: 0px 8px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  top:-306px;
-  position: absolute;
-  white-space: nowrap;
-  left:-250px;
-  /* font-family: 'Anton', sans-serif;*/
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.banner p {
-  font-size: 40px;
-  font-weight: lighter;
-
-  opacity: 0.8;
-  margin-bottom: 30px;
-  position: absolute;
-  z-index: 2;
-  color: #ffff;
-  white-space: nowrap;
-  top: 150px;
-  left: -105px;
+.hero p{
+  margin-left:10px;
 }
+
 
 .currently-learning{
   position: absolute;
@@ -251,9 +231,12 @@ p {
 
 }
 
-.navigation ul li:nth-child(5){
- font-size: 37px;
- margin-left: 40%;
+.navigation ul li:nth-child(6){
+ font-size: 30px;
+ margin-left: 369px;
+ /*position: absolute;
+ left: 70%;*/
+
 }
 
 .navigation li{
@@ -267,11 +250,7 @@ p {
   right: 238%;
   font-size: 22px;
 }
-
-.banner{
-  position: relative;
-}
-
+ 
 .navigation ul{
   height: 45px;
   list-style: none !important;
@@ -303,14 +282,19 @@ p {
   border: groove 3px aqua;
 }
 
-
-#iresume{
-  position: relative;
-  left: 36%;
-  content: '';
-  width: 7px;
-
+button.btn{
+  font-size: 20px;
+  color: white;
+  background-color: #449D44;
+  transition-property: background-color;
 }
+
+button.btn:hover{
+  color: white;
+  background-color:#da552f;
+  transition: background-color .3s;
+}
+
 
 .project-status{
   color: green;
@@ -325,6 +309,10 @@ p {
     position:relative;
     padding-bottom:56.25%;
     margin-top: 20px;
+  }
+
+  .banner img{
+    height: auto;
   }
 
   .currently-learning{
@@ -357,14 +345,6 @@ p {
     text-align: center;
   }
 
-  .resume-container{
-    /*position: relative;*/
-    margin-left: -141px;
-    height: 0;
-    left: 0;
-    width: 100%;
-    max-width: 5371%;
-  }
 
   .p-title{
     display: none;
