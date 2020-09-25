@@ -47,6 +47,19 @@ p.scrollIntoView({behavior: 'smooth', block: 'start'});
 })
 
 
+let contact = document.getElementsByClassName("cnt");
+  for(let e of contact){
+
+e.addEventListener("click", function(){
+  let contactForm = document.getElementById("cnt");
+
+contactForm.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+})
+
+  }
+
+
    toggleCheckBox = () => {
    let input = document.getElementById("color-switch");
     let pTags = document.querySelectorAll('p');
