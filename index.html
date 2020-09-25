@@ -19,9 +19,10 @@
   <nav class="navigation">
       <ul>
         <li><a id="nav">Home</a></li>
-        <li><a id="prj"  class="navbar-wagon-item navbar-wagon-link">Projects</a> </li>
-        <li><a id="rsm"  class="navbar-wagon-item navbar-wagon-link">Resume</a></li>
-        <li><a id ="exp"  class="navbar-wagon-item navbar-wagon-link">Tech</a>
+        <li><a id="prj">Projects</a> </li>
+        <li><a id="rsm">Resume</a></li>
+        <li><a id ="exp">Tech</a>
+          <li><a class="cnt"> Contact</a></li>
         </li> 
         <li>
          <label class="switch">
@@ -29,7 +30,6 @@
           <span class="slider round"></span>
         </label>
       </li>
-      <li id='myName'><b>Hassan Mccutchen</b></li>
     </ul>
 </nav>
 
@@ -39,12 +39,14 @@
 
   <img class="banner" src="./hassan.png" alt="#">
 
-      
     <p>I'm a <b class="important-text"> Junior Full-Stack Software Engineer</b> located in NYC,<br/> I've been developing professionally for 2 years.<br/> Primarily developing with Ruby/Rails writing front-end & backend features,<br/> and writing tests using Rspec & Cypress.<br/> Outside of Tech Im also a musician and enjoy practicing archery. 🏹 
     
-    <em> <a href="mailto:mccutchen.hassan@gmail.com" role="button">Send me an email</a></em>
+    <em> <a class="cnt" >Send me an email</a></em>
     </p>
  
+</div>
+<div class="container">
+  <p id='myName' style="margin-left: 14%; font-size: 38px">Hassan Mccutchen</p>  
 </div>
 
 
@@ -212,6 +214,34 @@
     </article>
   </div>
 </div>
+</div>
+
+<a id="cnt" name="contact"></a>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 ">
+      <div class="section-title">
+        <h2>Send me a message!</h2>
+      </div>
+       <div class="container">
+        <form
+        action="https://formspree.io/mnqoqegk"
+        method="POST"
+        enctype="multipart/form-data"
+        >
+        <label>
+          <p>Email:</p>
+        </label><br/>
+          <input placeholder="Your Email" type="text" name="_replyto"><br>
+        <label class="message">
+          <p>Message:</p>
+        </label><br/>
+          <textarea  placeholder="Your Message" name="message"></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+        </div>
+    </div>
+  </div>
 </div>
 
 <footer>
