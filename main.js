@@ -7,58 +7,6 @@
   }
 
 
-var nav = document.getElementById("nav");
-
-nav.addEventListener("click", function(){
-  var n = document.getElementById("navb");
-
-n.scrollIntoView({behavior: 'smooth', block: 'start'});
-
-})
-
-
-var exp = document.getElementById("exp");
-
-exp.addEventListener("click", function(){
-  var s = document.getElementById("ex");
-
-s.scrollIntoView({behavior: 'smooth', block: 'start'});
-
-})
-
-
-var resume = document.getElementById("rsm");
-
-
-resume.addEventListener("click", function(){
-  var r = document.getElementById("res");
-
-res.scrollIntoView({behavior: 'smooth', block: 'start'});
-
-})
-
-var project = document.getElementById("prj");
-
-project.addEventListener("click", function(){
-  var p = document.getElementById("proj");
-
-p.scrollIntoView({behavior: 'smooth', block: 'start'});
-
-})
-
-
-let contact = document.getElementsByClassName("cnt");
-  for(let e of contact){
-
-e.addEventListener("click", function(){
-  let contactForm = document.getElementById("cnt");
-
-contactForm.scrollIntoView({behavior: 'smooth', block: 'start'});
-
-})
-
-  }
-
 
    toggleCheckBox = () => {
    let input = document.getElementById("color-switch");
