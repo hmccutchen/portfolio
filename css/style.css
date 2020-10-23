@@ -151,19 +151,21 @@ img.banner {
 .currently-learning{
   position: absolute;
   z-index: 2;
-  width: 32.5%;
+  width: 31.5%;
   height: 21%;
-  background-color: black;
-  opacity: 0.6;
+  /*background-color: white;*/
+  opacity: 0.5;
   bottom: 0px;
   right: 14px;
 }
 
 .currently-learning::before{
   content: "learning";
-  color: white;
-  color: #ececec;
-  font-size: 105px;
+  color: black;
+  font-size: 70px;
+  line-height: 20rem;
+ margin-left: 46px;
+
 }
 
 .email-button{
@@ -305,10 +307,6 @@ button[type=submit]:hover{
   display: flex;
 }
 
-.profil {
-  object-fit: cover;
-}
-
 .grid-card{
   display: grid;
   grid-template-rows: repeat(4, 200px);
@@ -318,15 +316,15 @@ button[type=submit]:hover{
 
 .profil img {
   width: 400px;
-  object-fit: fill;
+  object-fit: contain;
   max-width: 100%;
   max-height: 100%;
   height: 320px;
 }
 
-.pulse:hover {
+/*.pulse:hover {
   border: groove 3px aqua;
-}
+}*/
 
 button.btn{
   font-size: 20px;
@@ -366,9 +364,6 @@ button.btn:hover{
     width: 92%;
   }
 
-  .currently-learning::before{
-    font-size: 92px;
-  }
 
   .video-container iframe{
     max-width:100%;
