@@ -148,7 +148,7 @@ img.banner {
 }
 
 
-.currently-learning{
+/* .currently-learning{
   position: absolute;
   z-index: 3;
   height: 21%;
@@ -164,7 +164,7 @@ img.banner {
   line-height: 20rem;
  margin-left: 46px;
 
-}
+} */
 
 .email-button{
   position: absolute;
