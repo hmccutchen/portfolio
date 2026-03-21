@@ -1,249 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hassan Mccutchen</title>
-
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <meta name="description" content="Portfolio site for Hassan Mccutchen, a software engineer in New York.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="icon" href="bigh.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
-<body id="navb">
-
+<body>
   <nav class="navigation">
-    <ul>
-      <li><a href="#hero" id="nav">Home</a></li>
-      <li><a href="#proj" id="prj">Projects</a> </li>
-      <li><a href="#res" id="rsm">Resume</a></li>
-      <li><a href="#ex" id="exp">Tech</a>
-      <li><a href="#cnt" class="cnt"> Contact</a></li>
-      </li>
-      <li>
-        <label class="switch">
-          <input id="color-switch" onchange='toggleCheckBox()' type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </li>
-    </ul>
+    <div class="nav-inner">
+      <a class="brand" href="#hero">Hassan Mccutchen</a>
+      <ul class="nav-links">
+        <li><a href="#proj">Projects</a></li>
+        <li><a href="#ex">Tech</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#cnt">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-
-
-  <div id="hero" class="hero">
-
-    <img class="banner" src="./hassan.png" alt="#">
-
-    <p> A <b class="important-text"> Software Engineer</b> located in NYC,<br /> I specialize in backend development
-      using Ruby/Rails
-      and modern frontend frameworks like React and Vue.js. I have a passion for building
-      <br /> Outside of tech, I'm also a musician 🎸 and martial artist 🤼.
-
-    </p>
-
-  </div>
-  <div class="container">
-    <p id='myName' style="margin-left: 2%; font-size: 4rem">Hassan Mccutchen</p>
-  </div>
-
-
-
-  <a id="proj" name="projects"></a>
-  <div class="container" style="margin-top: 14px;">
-    <div class="row">
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-      <div class="col-md-6 col-sm-12 col-xs-12 video-container">
-        <h1 class="p-title"> LBD Property Management</h1></a>
-        <img class="p-video structure-one" width="500" height="350"
-          src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740455230/Screenshot_2025-02-24_at_22.24.46_fwcrqv.png" />
-        <p class="col-md-11 video-text">
-          This project is a property management application that allows admin users to manage their properties, tenants,
-          and leases. Resident users can chat with the property manager and pay rent through the app
-          <br />
-          Tech: Ruby on Rails, PostgreSQL, websockets, stimulus js, Stripe API
-        </p>
-      </div>
-
-      <div class="col-md-6 col-sm-12 col-xs-12 video-container">
-        <a href="https://github.com/hmccutchen/tips">
-          <h1 class="p-title">Tippio/Tips <span class="project-status">Updated</span></h1>
-        </a>
-
-        <iframe class="p-video" width="500" height="350"
-          src="https://www.loom.com/embed/a9abfffe28ef40439feb616f1404d852" frameborder="0" webkitallowfullscreen
-          mozallowfullscreen allowfullscreen></iframe>
-        <p class="col-md-11 video-text">
-          This project is designed to service bartenders/servers. Users are able to search for a restaurant they've
-          worked, and post a review based on criteria, users may also like another users post via tip/no tip and view
-          individual reviews for more information. Future development may intergrate job posting and live chat
-          features.<br />
-
-          Tech: Rails , Ruby, SQL, Yelp API, Vue.JS, Vanilla.js, Bootstrap & deployed using Heroku
-        </p>
+  <header id="hero" class="hero section">
+    <div class="hero-copy">
+      <p class="eyebrow">Software Engineer · NYC</p>
+      <h1>Designing systems that bring clarity to real-world complexity.</h1>
+      <p class="hero-text">
+        Backend-focused Software Engineer with experience building data-driven web applications in Ruby on Rails. I
+        specialize
+        in turning complex, messy inputs like invoices and contracts into reliable, structured systems. I enjoy working
+        across
+        the stack when needed and thrive in collaborative environments where thoughtful problem-solving matters.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#proj">View projects</a>
+        <a class="button button-secondary" href="#experience">View experience</a>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12 video-container">
-        <h1 class="p-title">Music Toy</h1>
-        <iframe class="p-video" width="500" height="350"
-          src="https://www.loom.com/embed/513c3377902b49e4a227a108e743f4be" frameborder="0" webkitallowfullscreen
-          mozallowfullscreen allowfullscreen>
-
-        </iframe>
-        <p class="col-md-11 video-text">
-          Small Toy music app, utilizing Vue.js, web audio API and the use of CSS key frames to create minor
-          animations. Create music and record music, still in progress. <br />
-          Tech: Vue.js, Web Audio API, deployed on Netlify: <a href="https://musictoy.netlify.app/">Music Toy</a>
-        </p>
-      </div>
+    <div class="hero-side">
+      <img class="banner" src="./hassan.png" alt="Portrait of Hassan Mccutchen">
     </div>
-  </div>
+  </header>
 
-  <a id="res" name="resume"></a>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
+  <main class="page-content">
+    <section id="proj" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <p class="section-copy">A few examples of the products and interfaces I have built.</p>
+      </div>
 
-        <div class="resume-container">
-          <img class="resume" src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1741236201/resume_2_wl4rq8.png"
-            style="width: 600px;" />
-          <a download href="hassan-resume.pdf" download>
-            <button class="btn" style="width: 600px;"> <i class="fa fa-download"></i> Download </button>
-          </a>
-          <div class="currently-learning">
+      <div class="project-list">
+        <article class="project-card project-card-featured">
+          <div class="project-media">
+            <img src="blind-match.png" alt="BlindMatch app preview">
           </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <a id="ex" name="experience"></a>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="section-title">
-            <h2>Technologies</h2>
+          <div class="project-copy">
+            <h3>BlindMatch</h3>
+            <p>
+              Blind-first matching app where users make a connection before revealing photos, shifting the early
+              experience toward conversation and compatibility instead of immediate appearance-based swiping.
+            </p>
+            <ul class="tag-list">
+              <li>Ruby on Rails</li>
+              <li>Inertia.js</li>
+              <li>Vite</li>
+              <li>Tailwind CSS</li>
+            </ul>
           </div>
+        </article>
 
-          <article class="grid-card">
-            <div class="profil pulse">
-              <img src='https://res.cloudinary.com/dqlgw1xiw/image/upload/v1603568664/ruby-icon_wwcdva.png'
-                alt="Ruby on Rails">
-            </div>
+        <article class="project-card project-card-featured">
+          <div class="project-media">
+            <img src="lbd-properties.png" alt="LBD Property Management screenshot">
+          </div>
+          <div class="project-copy">
+            <h3>LBD Property Management</h3>
+            <p>
+              Property management application for admins and residents, with tenant communication, lease workflows, and
+              rent payments in one place.
+            </p>
+            <ul class="tag-list">
+              <li>Ruby on Rails</li>
+              <li>PostgreSQL</li>
+              <li>WebSockets</li>
+              <li>Stimulus</li>
+              <li>Stripe</li>
+            </ul>
+          </div>
+        </article>
 
-            <div class="profil pulse">
-              <img
-                src='https://res.cloudinary.com/dqlgw1xiw/image/upload/v1635983617/2048px-GraphQL_Logo.svg_eswdwd.png'
-                alt="Graphql">
+        <article class="project-card project-card-featured project-card-reader-focus">
+          <div class="project-media">
+            <img src="reader-focus.png" alt="Reader Focus Chrome extension screenshot">
+          </div>
+          <div class="project-copy">
+            <h3>Reader Focus</h3>
+            <p>
+              Simple Chrome extension built with vanilla JavaScript that lets users focus on single lines of text by
+              creating shaded overlays across the web page while they read.
+            </p>
+            <ul class="tag-list">
+              <li>Vanilla JavaScript</li>
+              <li>Chrome Extension</li>
+              <li>DOM APIs</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://chromewebstore.google.com/detail/reader-focus/acknbmamflncpmmhmgmaiiioifcnddpg?hl=en&amp;authuser=0"
+                target="_blank" rel="noreferrer">Chrome Web Store</a>
+            </div>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-copy">
+            <h3>Tippio / Tips</h3>
+            <p>
+              Review platform for bartenders and servers to search workplaces, leave feedback, and interact with other
+              posts.
+            </p>
+            <ul class="tag-list">
+              <li>Rails</li>
+              <li>Ruby</li>
+              <li>SQL</li>
+              <li>Vue</li>
+              <li>Yelp API</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/hmccutchen/tips" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.loom.com/embed/a9abfffe28ef40439feb616f1404d852" target="_blank"
+                rel="noreferrer">Demo</a>
             </div>
+          </div>
+        </article>
 
-            <div class="profil pulse">
-              <img src='https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740367545/Typescript-01_eoevzy.png'
-                alt="Typescript">
+        <article class="project-card">
+          <div class="project-copy">
+            <h3>Music Toy</h3>
+            <p>
+              Browser-based music app built with Vue and the Web Audio API, focused on small interactions, recording,
+              and playful experimentation.
+            </p>
+            <ul class="tag-list">
+              <li>Vue</li>
+              <li>Web Audio API</li>
+              <li>CSS Animation</li>
+              <li>Netlify</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://musictoy.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
+              <a href="https://www.loom.com/embed/513c3377902b49e4a227a108e743f4be" target="_blank"
+                rel="noreferrer">Demo</a>
             </div>
-
-            <div class="profil pulse">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1603568971/postgres-icon_h9hsse.png"
-                alt="Postgres">
-            </div>
-
-            <div class="profil pulse">
-              <img
-                src="https://assets.website-files.com/5cbeeb7f8edd98460ed4256f/5cbf4c884f91c73c3d07f5b9_heroku-1-logo.png"
-                alt="Heroku">
-            </div>
-
-            <div class="profil">
-              <img
-                src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1603480674/output-onlinepngtools-1_p4tuwa.png"
-                alt="Rspec">
-            </div>
-
-            <div class="profil">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740185149/124714131_p5z15w.png"
-                alt="Sidekiq">
-            </div>
-
-            <div class="profil">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1635983508/1280px-React-icon.svg_ckgzaf.png"
-                alt="React">
-            </div>
-
-            <div class="profil">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1635984637/0_RfTXIdj0OMqSiDwC_gattju.png"
-                alt="Jest testing library">
-            </div>
-            <div class="profil">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740185149/redis-logo_2x_unavw3.png"
-                alt="Redis">
-            </div>
-            <div class="profil">
-              <img
-                src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740184976/circleci-logo-png_seeklogo-482238_nnhrg6.png"
-                alt="Circleci">
-            </div>
-            <div class="profil new-relic">
-              <img src="https://res.cloudinary.com/dqlgw1xiw/image/upload/v1740185148/new-relic-wordmark_oqbo8x.svg"
-                alt="Newrelic">
-            </div>
-
-        </div>
+          </div>
         </article>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <a id="cnt" name="contact"></a>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="section-title">
-          <h2>Send me a message!</h2>
-        </div>
-        <div class="container">
-          <form action="https://formspree.io/mnqoqegk" method="POST" enctype="multipart/form-data">
-            <label>
-              <p>Email:</p>
-            </label><br />
-            <input placeholder="Your Email" type="text" name="_replyto"><br>
-            <label class="message">
-              <p>Message:</p>
-            </label><br />
-            <textarea placeholder="Your Message" name="message"></textarea><br>
-            <button data-rel="back" type="submit">Send</button>
-          </form>
-        </div>
+    <section id="ex" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Technologies</p>
+        <h2>Tools I work with</h2>
+        <p class="section-copy">The stack is mostly backend and product-focused, with modern frontend work where it
+          helps.</p>
       </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="footer col-md-12 col-sm-12 col-xs-12">
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/hassanmccutchen/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/hmccutchen?tab=repositories"><i class="fa fa-github"></i></a>
+      <ul class="tech-list">
+        <li>Ruby on Rails</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>GraphQL</li>
+        <li>PostgreSQL</li>
+        <li>Redis</li>
+        <li>Sidekiq</li>
+        <li>RSpec</li>
+        <li>Heroku</li>
+        <li>CircleCI</li>
+        <li>New Relic</li>
+        <li>Claude</li>
+        <li>Codex</li>
+        <li>GitHub Copilot</li>
+        <li>Inertia.js</li>
+        <li>Tailwind CSS</li>
+        <li>Stimulus</li>
+        <li>Vite</li>
+        <li>Hotwire</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Work experience</h2>
+        <p class="section-copy">A snapshot of the teams I have worked with and the product, performance, and teaching
+          work I have handled.</p>
       </div>
-      <div class="footer-copyright">
-        Made with <i class="fa fa-heart"></i> by <b>Hassan Mccutchen</b>
+
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="experience-role">Software Engineer</p>
+              <h3>Fine Tune</h3>
+            </div>
+            <p class="experience-meta">August 2021 - current · New York, NY</p>
+          </div>
+          <p class="experience-summary">
+            Built and shipped product features across a reporting platform used by account managers, with a focus on
+            backend reliability, application performance, and reducing day-to-day operational friction.
+          </p>
+          <ul class="experience-highlights">
+            <li>Delivered new features and resolved critical issues with Ruby on Rails, React, and GraphQL.</li>
+            <li>Improved SQL query performance and used New Relic to streamline debugging and database tuning.</li>
+            <li>Reworked onboarding documentation and supported LEARN Academy students through monthly mentorship.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="experience-role">Web Development Educator</p>
+              <h3>Catholic Charities</h3>
+            </div>
+            <p class="experience-meta">July 2020 - August 2020</p>
+          </div>
+          <p class="experience-summary">
+            Taught web fundamentals in a fast-paced educational setting, helping beginners build confidence with HTML,
+            CSS, and small project work.
+          </p>
+          <ul class="experience-highlights">
+            <li>Led coding lessons and workshops for groups ranging from 100 to 150 participants.</li>
+            <li>Used Glitch.com tutorials and guided exercises to make project-based learning approachable.</li>
+            <li>Helped students build landing pages and present final work more clearly.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="experience-role">Full Stack Software Apprentice</p>
+              <h3>Heritage Custom Builders, LLC</h3>
+            </div>
+            <p class="experience-meta">December 2018 - March 2020</p>
+          </div>
+          <p class="experience-summary">
+            Worked on internal software for home builders, improving the tools used to track products, materials, and
+            workflows across construction projects.
+          </p>
+          <ul class="experience-highlights">
+            <li>Built Rails interfaces that improved how teams tracked products and materials.</li>
+            <li>Used Postgres, RSpec, and Capybara to improve data retrieval, test coverage, and feature reliability.
+            </li>
+            <li>Focused on practical product improvements that increased efficiency and day-to-day usability.</li>
+          </ul>
+        </article>
       </div>
+    </section>
+
+    <section id="cnt" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in touch</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p>If you want to talk about a role or a project, send a message or use the links below.</p>
+          <div class="project-links">
+            <a href="https://www.linkedin.com/in/hassanmccutchen/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/hmccutchen?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/mnqoqegk" method="POST">
+          <label for="email">Email</label>
+          <input id="email" placeholder="Your Email" type="email" name="_replyto">
+
+          <label for="message" class="message-label">Message</label>
+          <textarea id="message" placeholder="Your Message" name="message"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/hassanmccutchen/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+            d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.17 3 3.5 3.72 3.5 4.66c0 .92.65 1.66 1.71 1.66h.02c1.1 0 1.77-.74 1.77-1.66C6.98 3.72 6.33 3 5.25 3ZM20.5 13.08c0-3.53-1.88-5.17-4.39-5.17-2.02 0-2.92 1.11-3.43 1.89V8.5H9.3c.04.86 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.89-1.39 1.93-1.39 1.36 0 1.9 1.04 1.9 2.56V20H20.5v-6.92Z" />
+        </svg>
+      </a>
+      <a href="https://github.com/hmccutchen?tab=repositories" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+            d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.04 1.77 2.72 1.26 3.38.97.1-.75.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.01 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.56.23 2.72.11 3.01.73.8 1.18 1.82 1.18 3.07 0 4.4-2.68 5.37-5.24 5.66.42.36.79 1.05.79 2.13 0 1.54-.01 2.77-.01 3.15 0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z" />
+        </svg>
+      </a>
+    </div>
+    <div class="footer-copy">
+      Hassan Mccutchen · <span id="current-year">2026</span>
     </div>
   </footer>
 
