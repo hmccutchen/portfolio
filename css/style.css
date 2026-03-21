@@ -304,6 +304,10 @@ form {
   object-fit: contain;
 }
 
+.project-card-finetune .project-media img {
+  object-position: left center;
+}
+
 .tag-list,
 .tech-list {
   display: flex;
